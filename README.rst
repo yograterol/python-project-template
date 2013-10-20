@@ -64,6 +64,11 @@ Instructions
 
 #. *(Optional, but good practice)* Create a new virtual environment for your project:
 
+   With pyenv_ and pyenv-virtualenv_::
+
+       pyenv virtualenv my-project
+       pyenv local my-project
+
    With virtualenvwrapper_::
 
        mkvirtualenv my-project
@@ -104,10 +109,12 @@ Instructions
         |  _/ _ \\__ \__ \ _|| |) |
         |_|/_/ \_\___/___/___|___/
 
-    The substitution performed is rather naive, so some style errors may be reported if the description or name cause lines to be too long. Correct these manually before moving to the next step. If any unit tests fail to pass, please report an issue.
+   The substitution performed is rather naive, so some style errors may be reported if the description or name cause lines to be too long. Correct these manually before moving to the next step. If any unit tests fail to pass, please report an issue.
 
 Project setup is now complete!
 
+.. _pyenv: https://github.com/yyuu/pyenv
+.. _pyenv-virtualenv: https://github.com/yyuu/pyenv-virtualenv
 .. _virtualenvwrapper: http://virtualenvwrapper.readthedocs.org/en/latest/index.html
 .. _virtualenv: http://www.virtualenv.org/en/latest/
 .. _Virtual Environment section: http://docs.python-guide.org/en/latest/dev/virtualenvs.html
